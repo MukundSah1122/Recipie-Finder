@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavorySphere | Recipe Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SavorySphere</h1>
+            <p class="tagline">Discover delicious recipes for every occasion</p>
+            
+            <div class="search-section">
+                <form class="search-form" id="searchForm">
+                    <div class="form-group">
+                        <label for="searchQuery">What would you like to cook today?</label>
+                        <div class="search-input">
+                            <input type="text" id="searchQuery" placeholder="e.g. pasta, chicken, vegetarian..." required>
+                            <button type="submit"><i class="fas fa-search"></i> Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="recipes-section">
+            <div class="container">
+                <h2 class="section-title">Popular Recipes</h2>
+                
+                <div class="recipes-grid" id="recipesGrid">
+                    <!-- Recipe cards will be dynamically populated -->
+                    <div class="recipe-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsMDOhnwuBvl0pcN14PofKJWPFM0tJHWfJg&s" alt="Creamy spaghetti carbonara with bacon and parmesan cheese" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Classic Carbonara</h3>
+                            <p class="recipe-desc">Creamy Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 25 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Medium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src= "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-masala-500x500.jpg" alt="Spicy chicken tikka masala with basmati rice" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Chicken Tikka Masala</h3>
+                            <p class="recipe-desc">Creamy, spiced Indian chicken dish with aromatic sauce.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 40 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src= "https://www.spendwithpennies.com/wp-content/uploads/2022/09/Avocado-Toast-SpendWithPennies-1.jpg" alt="Healthy avocado toast with poached eggs" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Avocado Toast</h3>
+                            <p class="recipe-desc">Simple, healthy breakfast with creamy avocado and crunchy bread.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 10 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src="https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-SQ.jpg" alt="Colorful vegetable stir fry with noodles" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Vegetable Stir Fry</h3>
+                            <p class="recipe-desc">Quick and healthy Asian-style vegetable stir fry.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 15 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src= "https://cdn.loveandlemons.com/wp-content/uploads/2024/08/chocolate-chip-cookie-recipe.jpg" alt="Freshly baked chocolate chip cookies on a plate" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Chocolate Chip Cookies</h3>
+                            <p class="recipe-desc">Classic soft-baked cookies with melty chocolate chunks.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 30 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src= "https://images.themodernproper.com/production/posts/GreekSalad_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1718650734&s=70119bf37604d243d0729db7f4cda445" alt="Fresh Greek salad with feta cheese and olives" class="recipe-img">
+                        <div class="recipe-info">
+                            <h3 class="recipe-title">Greek Salad</h3>
+                            <p class="recipe-desc">Refreshing Mediterranean salad with crisp vegetables.</p>
+                            <div class="recipe-meta">
+                                <span class="time"><i class="far fa-clock"></i> 15 min</span>
+                                <span class="difficulty"><i class="fas fa-utensils"></i> Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 SavorySphere. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example of dynamic recipe loading
+            const recipes = [
+                {
+                    id: 1,
+                    title: "Beef Bourguignon",
+                    description: "Classic French beef stew cooked in red wine with mushrooms and pearl onions.",
+                    image: "https://placehold.co/600x400?text=Beef+Bourguignon",
+                    time: "3.5 hours",
+                    difficulty: "Advanced"
+                },
+                {
+                    id: 2,
+                    title: "Margherita Pizza",
+                    description: "Simple Neapolitan pizza with tomato sauce, fresh mozzarella, and basil.",
+                    image: "https://placehold.co/600x400?text=Margherita+Pizza",
+                    time: "1 hour",
+                    difficulty: "Medium"
+                },
+                {
+                    id: 3,
+                    title: "Berry Smoothie Bowl",
+                    description: "Healthy breakfast bowl with blended berries, granola, and honey.",
+                    image: "https://placehold.co/600x400?text=Berry+Smoothie+Bowl",
+                    time: "10 min",
+                    difficulty: "Easy"
+                }
+            ];
+
+            // Form submission handler
+            const searchForm = document.getElementById('searchForm');
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const query = document.getElementById('searchQuery').value;
+                    alert(`Searching for recipes with: ${query}`);
+                    // In a real app, you would fetch recipes based on the search query here
+                });
+            }
+
+            // Responsive adjustments
+            function adjustRecipeCards() {
+                const cards = document.querySelectorAll('.recipe-card');
+                const width = window.innerWidth;
+                
+                if (width < 480) {
+                    cards.forEach(card => {
+                        card.style.margin = '0 0 20px 0';
+                    });
+                }
+            }
+
+            window.addEventListener('resize', adjustRecipeCards);
+            adjustRecipeCards();
+        });
+    </script>
+</body>
+</html>
